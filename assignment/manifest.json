@@ -5,11 +5,13 @@
   "display": "standalone",
   "background_color": "#0B1F3A",
   "theme_color": "#0B1F3A",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "../ER_MPH_Assignment_180.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

@@ -2,75 +2,136 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ER MPH Assignment</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="manifest" href="manifest.json">
+  <title>ER MPH Assignment 2026</title>
 
-  <meta name="theme-color" content="#0B1F3A">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="ER MPH Assignment">
-
-  <link rel="apple-touch-icon"
+  <!-- Favicon -->
+  <link rel="icon"
+        type="image/png"
         href="../ER_MPH_Assignment_180.png">
 
+  <!-- iPhone Home Screen -->
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="../ER_MPH_Assignment_180.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.json">
+
+  <meta name="theme-color" content="#0B1F3A">
+
   <style>
+
     * {
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
-      min-height: 100vh;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: Arial, "Noto Sans Thai", sans-serif;
+    }
+
+    body {
+      background:
+        linear-gradient(
+          135deg,
+          #0B1F3A 0%,
+          #102E52 50%,
+          #0B1F3A 100%
+        );
+
+      color: white;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
-      background: #0B1F3A;
-      color: white;
+
+      min-height: 100vh;
+      min-height: 100dvh;
+
       text-align: center;
     }
 
     .container {
-      width: 90%;
-      max-width: 420px;
+      width: 100%;
+      max-width: 520px;
+      padding: 30px 20px;
     }
 
     .icon {
       width: 180px;
       height: 180px;
-      border-radius: 40px;
+
+      object-fit: contain;
+
+      border-radius: 38px;
+
       margin-bottom: 25px;
+
+      filter:
+        drop-shadow(0 10px 20px rgba(0,0,0,0.35));
     }
 
     h1 {
+      margin: 0 0 12px;
+
       font-size: 30px;
-      margin: 10px 0;
+      font-weight: 800;
     }
 
-    p {
-      font-size: 17px;
-      line-height: 1.6;
-      color: #dbe7f5;
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.7;
+
+      margin-bottom: 28px;
+
+      color: #e8eef7;
     }
 
-    button {
-      margin-top: 25px;
-      padding: 16px 30px;
-      border: none;
-      border-radius: 16px;
+    .open-btn {
+      display: inline-block;
+
+      padding: 16px 38px;
+
       background: white;
       color: #0B1F3A;
+
+      text-decoration: none;
+
+      border-radius: 16px;
+
       font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
+      font-weight: 700;
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.25);
+
+      transition: 0.2s;
     }
 
-    button:active {
+    .open-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .open-btn:active {
       transform: scale(0.97);
     }
+
+    .version {
+      margin-top: 25px;
+
+      font-size: 13px;
+
+      color: rgba(255,255,255,0.65);
+    }
+
   </style>
 </head>
 
@@ -81,28 +142,35 @@
     <img
       class="icon"
       src="../ER_MPH_Assignment_180.png"
-      alt="ER MPH Assignment">
+      alt="ER MPH Assignment 2026"
+    >
 
-    <h1>ER MPH Assignment</h1>
+    <h1>
+      ER MPH Assignment
+    </h1>
 
-    <p>
+    <div class="subtitle">
+
       ระบบจัดเวรและมอบหมายงานพยาบาล<br>
-      ER Nurse Assignment Dashboard<br>
-      โรงพยาบาลเมืองปาน
-    </p>
 
-    <button onclick="openApp()">
+      ER Nurse Assignment Dashboard<br>
+
+      โรงพยาบาลเมืองปาน
+
+    </div>
+
+    <a
+      class="open-btn"
+      href="https://script.google.com/macros/s/AKfycbz5EWE-2IjK77oiUoW65awUDWcwtgVqTmc6x3eWPaP9Y9L6iubHFqPupYc_AOCIG0lMyA/exec"
+    >
       เปิดระบบ Assignment
-    </button>
+    </a>
+
+    <div class="version">
+      ER MPH Assignment 2026
+    </div>
 
   </div>
-
-  <script>
-    function openApp() {
-      window.location.href =
-        "https://script.google.com/macros/s/AKfycbz5EWE-2IjK77oiUoW65awUDWcwtgVqTmc6x3eWPaP9Y9L6iubHFqPupYc_AOCIG0lMyA/exec";
-    }
-  </script>
 
 </body>
 </html>
